@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juice Order</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Segoe UI, sans-serif;
+}
+
+/* background */
+
+.background img{
+    position:relative;
+    width:100%;
+    height:100vh;
+    object-fit:cover;
+}
+
+/* heading */
+
+.adds{
+    position:absolute;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+    color:gold;
+    text-align:center;
+}
+
+.adds p{
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* form */
+
+.form{
+    padding:20px;
+    position:absolute;
+    top:230px;
+    left:50%;
+    transform:translateX(-50%);
+    border:2px solid gold;
+    border-radius:15px 0;
+    box-shadow:10px 8px 15px #de970088;
+}
+
+label{
+    color:gold;
+    text-shadow:1px 0 21px gold;
+}
+
+select,input{
+    width:110px;
+    background:white;
+    color:brown;
+    border-radius:3px;
+    text-align:center;
+}
+
+button{
+    background:gold;
+    color:brown;
+    border-radius:5px;
+    padding:6px;
+    font-weight:bold;
+    margin-left:65%;
+    margin-top:10px;
+}
+
+/* marquee */
+
+.marq{
+    position:absolute;
+    bottom:50px;
+    width:100%;
+    overflow:hidden;
+}
+
+.track{
+    display:flex;
+    width:max-content;
+    animation:scroll 30s linear infinite;
+}
+
+.track img{
+    width:100px;
+    height:100px;
+    margin-right:20px;
+    border-radius:10px;
+    background:white;
+}
+
+/* continuous animation */
+
+@keyframes scroll{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+
+/* footer */
+
+.footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    color:gold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="background">
+<img src="https://tse4.mm.bing.net/th/id/OIP.9vJBApxUnxebNzq6HD5ujAHaEo?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+style="filter:brightness(40%)">
+</div>
+
+<div class="adds">
+<h2>Place Your Order Now!!!</h2>
+<hr style="border:1px solid gold;">
+<p>Get your favorite snacks and juice delivered to your doorstep</p>
+</div>
+
+<div class="form">
+
+<table>
+
+<tr>
+<td><label>Choose Item</label></td>
+<td>
+<select required>
+<option>Select item</option>
+<option>Rosemilk ₹50</option>
+<option>Kesar Badam Milk ₹50</option>
+<option>Rich Chocolate Shake ₹70</option>
+<option>Strawberry Shake ₹70</option>
+<option>Oreo Shake ₹70</option>
+<option>Mint Mojito ₹40</option>
+<option>Bajji ₹15</option>
+<option>Egg Puff ₹30</option>
+<option>Chicken Cutlet ₹35</option>
+<option>Spicy Samosa ₹15</option>
+<option>Vada ₹15</option>
+<option>Paneer Puff ₹30</option>
+<option>Pomegranate Juice ₹60</option>
+<option>Green Apple Juice ₹40</option>
+<option>Orange Juice ₹50</option>
+<option>Pineapple Juice ₹40</option>
+<option>Grape Juice ₹50</option>
+<option>Dragon Fruit Juice ₹60</option>
+<option>Ginger Tea ₹25</option>
+<option>Hibiscus Tea ₹30</option>
+<option>Karupatti Coffee ₹30</option>
+<option>Masala Tea ₹25</option>
+<option>Coffee ₹25</option>
+<option>Black Tea ₹20</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label>Quantity</label></td>
+<td>
+<select required>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10+</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label>Address</label></td>
+<td><input type="text" placeholder="Your Address" required></td>
+</tr>
+
+<tr>
+<td><label>Phone</label></td>
+<td><input type="number" placeholder="Phone Number" required></td>
+</tr>
+
+<tr>
+<td>
+<a href="thank.html">
+<button>Confirm</button>
+</a>
+</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- continuous image marquee -->
+
+<div class="marq">
+
+<div class="track">
+
+<img src="https://www.bing.com/th/id/OIP.SeTxKEtc2OD7oi3MGkAqrAHaHb?w=216&h=211&c=8&rs=1&qlt=90&o=6&cb=12&dpr=1.3&pid=3.1&rm=2">
+<img src="https://www.chaiandgossip.ca/wp-content/uploads/2024/04/Kesar-Badam-Milk-img.png">
+<img src="https://tse4.mm.bing.net/th/id/OIP.zZnFPpw-G6wubBc9hZG1KAHaHa">
+<img src="https://png.pngtree.com/png-vector/20240205/ourmid/pngtree-the-strawberry-milkshake-png-image_11654489.png">
+<img src="https://png.pngtree.com/png-clipart/20240921/original/pngtree-oreo-milkshake-png-image_16055106.png">
+
+<!-- duplicate images for infinite scroll -->
+
+<img src="https://www.bing.com/th/id/OIP.SeTxKEtc2OD7oi3MGkAqrAHaHb?w=216&h=211&c=8&rs=1&qlt=90&o=6&cb=12&dpr=1.3&pid=3.1&rm=2">
+<img src="https://www.chaiandgossip.ca/wp-content/uploads/2024/04/Kesar-Badam-Milk-img.png">
+<img src="https://tse4.mm.bing.net/th/id/OIP.zZnFPpw-G6wubBc9hZG1KAHaHa">
+<img src="https://png.pngtree.com/png-vector/20240205/ourmid/pngtree-the-strawberry-milkshake-png-image_11654489.png">
+<img src="https://png.pngtree.com/png-clipart/20240921/original/pngtree-oreo-milkshake-png-image_16055106.png">
+
+</div>
+
+</div>
+
+<div class="footer">
+<p>© 2026 Bala's Juice and Snacks Center. All rights reserved.</p>
+</div>
+
+</body>
+</html>
