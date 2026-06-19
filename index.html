@@ -1,123 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bala's Juice & Bakery</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    <meta charset="UTF-8">
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    header {
+      background: #ff6b35;
+      color: white;
+      text-align: center;
+      padding: 20px 15px;
+    }
 
-    <title>
-        WeatherApp Bala
-    </title>
+    header h1 { font-size: 28px; }
+    header p { font-size: 14px; margin-top: 5px; }
 
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 30px;
+      background: white;
+      color: #ff6b35;
+      font-weight: bold;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 16px;
+    }
 
+    .btn:hover { background: #ffe0d0; }
+
+    section {
+      padding: 20px 15px;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    section h2 {
+      font-size: 20px;
+      color: #ff6b35;
+      border-bottom: 2px solid #ff6b35;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 12px;
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .card h3 { font-size: 13px; margin-top: 8px; }
+    .card p { font-size: 12px; color: #ff6b35; font-weight: bold; margin-top: 4px; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ff6b35;
+      color: white;
+      font-size: 13px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 480px) {
+      header h1 { font-size: 22px; }
+      .grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
 </head>
+<body>
 
-<body class="sunny">
+<header>
+  <h1> Bala's Juice & Bakery</h1>
+  <p>Fresh Juices | Snacks | Teas — Order Online!</p>
+  <a href="menu.html" class="btn">Order Now 🛒</a>
+</header>
 
-    <!-- Animation Layer -->
-
-    <div
-        id="animation-container"
-    ></div>
-
-    <!-- Main App -->
-
-    <div class="app">
-
-        <!-- Header -->
-
-        <div class="header">
-
-            <h1>
-
-                🌦 WeatherApp
-
-            </h1>
-
-            <p>
-
-                Live Weather & Forecast
-
-            </p>
-
-        </div>
-
-        <!-- Search -->
-
-        <div class="search-section">
-
-            <input
-                type="text"
-                id="city"
-                placeholder="Enter City Name..."
-            >
-
-            <button
-                id="searchBtn"
-            >
-
-                Search
-
-            </button>
-
-        </div>
-
-        <!-- Error -->
-
-        <div
-            id="error"
-        ></div>
-
-        <!-- Current Weather -->
-
-        <div
-            id="weather-card"
-            class="weather-card"
-        >
-
-            <div
-                id="weather"
-            >
-
-            </div>
-
-        </div>
-
-        <!-- Forecast -->
-
-        <div
-            class="forecast-section"
-        >
-
-            <h2>
-
-                5 Day Forecast
-
-            </h2>
-
-            <div
-                id="forecast"
-            >
-
-            </div>
-
-        </div>
-
+<section>
+  <h2>🥤 Fresh Juices</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://www.pngplay.com/wp-content/uploads/6/Orange-Glass-Juice-PNG.png" alt="Orange Juice">
+      <h3>Orange Juice</h3><p>₹50</p>
     </div>
+    <div class="card">
+      <img src="https://static.vecteezy.com/system/resources/previews/039/336/065/non_2x/ai-generated-dragon-fruit-juice-isolated-on-transparent-background-png.png" alt="Dragon Fruit">
+      <h3>Dragon Fruit Juice</h3><p>₹60</p>
+    </div>
+    <div class="card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.YVs59w0QNbgmA1BnRClB1wHaLH?cb=12&pid=ImgDetMain" alt="Pomegranate">
+      <h3>Pomegranate Juice</h3><p>₹60</p>
+    </div>
+    <div class="card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.7rZUv8x_zumLqm7PqJrRDgHaHa?cb=12&pid=ImgDetMain" alt="Grape Juice">
+      <h3>Grape Juice</h3><p>₹50</p>
+    </div>
+  </div>
+</section>
 
-    <script
-        src="script.js"
-    ></script>
+<section>
+  <h2>🍵 Teas & Coffee</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.2bwBHDoZEYRbqUgZgQZLpgHaHa?cb=12&pid=ImgDetMain" alt="Ginger Tea">
+      <h3>Ginger Tea</h3><p>₹25</p>
+    </div>
+    <div class="card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.hMS_t6ZMXaqQLkldWVELCwHaHa?cb=12&pid=ImgDetMain" alt="Masala Tea">
+      <h3>Masala Tea</h3><p>₹15</p>
+    </div>
+    <div class="card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.XKXda6gp5aLsojNkB_hMpgHaHb?cb=12&pid=ImgDetMain" alt="Karupatti Coffee">
+      <h3>Karupatti Coffee</h3><p>₹25</p>
+    </div>
+    <div class="card">
+      <img src="https://imgs.search.brave.com/JUEad731KLEzzVICnqQ4xuBLTKgPDOm0gU5PIRSQwSQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTcv/MzUxLzU4My9zbWFs/bC9pc29sYXRlZC1j/b2ZmZWUtYmVhbi1h/bmQtY29mZmVlLWN1/cC1mb3ItYS1jb3p5/LWxvb2stZnJlZS1w/bmcucG5n" alt="Coffee">
+      <h3>Coffee</h3><p>₹25</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🥪 Snacks</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.nypkA4igmmAbLhFRyT5XXQHaGc?cb=12&pid=ImgDetMain" alt="Samosa">
+      <h3>Spicy Samosa</h3><p>₹15</p>
+    </div>
+    <div class="card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.pY_t1bSiiGy2Rws5seo-igHaE8?cb=12&pid=ImgDetMain" alt="Bajji">
+      <h3>Bajji</h3><p>₹15</p>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.BQ5IYtV5lb9kY6l8Ax7mDwHaLH?cb=12&pid=ImgDetMain" alt="Egg Puff">
+      <h3>Egg Puff</h3><p>₹30</p>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.Whq53cAhUjZQyVM3f-okXAHaE6?cb=12&pid=ImgDetMain" alt="Paneer Puff">
+      <h3>Paneer Puff</h3><p>₹30</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  ©2026 Bala's Juice & Bakery — All rights reserved.
+</footer>
 
 </body>
-
 </html>
