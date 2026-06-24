@@ -6,12 +6,7 @@
   <title>Bala's Juice & Bakery</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #fff8f0;
-      color: #333;
-    }
+    body { font-family: Arial, sans-serif; background: #fff8f0; color: #333; }
 
     header {
       background: #ff6b35;
@@ -19,7 +14,6 @@
       text-align: center;
       padding: 20px 15px;
     }
-
     header h1 { font-size: 28px; }
     header p { font-size: 14px; margin-top: 5px; }
 
@@ -34,15 +28,12 @@
       text-decoration: none;
       font-size: 16px;
     }
-
     .btn:hover { background: #ffe0d0; }
 
     section {
       padding: 20px 15px;
-      max-width: 100%;
-      margin: 0;
+      width: 100%;
     }
-
     section h2 {
       font-size: 20px;
       color: #ff6b35;
@@ -53,8 +44,8 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 15px;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 12px;
     }
 
     .card {
@@ -62,18 +53,16 @@
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       text-align: center;
-      padding: 12px;
+      padding: 10px;
     }
-
     .card img {
-      width: 80px;
-      height: 80px;
+      width: 70px;
+      height: 70px;
       object-fit: cover;
       border-radius: 50%;
     }
-
-    .card h3 { font-size: 13px; margin-top: 8px; }
-    .card p { font-size: 12px; color: #ff6b35; font-weight: bold; margin-top: 4px; }
+    .card h3 { font-size: 12px; margin-top: 6px; }
+    .card p { font-size: 12px; color: #ff6b35; font-weight: bold; margin-top: 3px; }
 
     footer {
       text-align: center;
@@ -84,8 +73,11 @@
       margin-top: 30px;
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
+      .grid { grid-template-columns: repeat(3, 1fr); }
       header h1 { font-size: 22px; }
+    }
+    @media (max-width: 480px) {
       .grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
@@ -93,11 +85,12 @@
 <body>
 
 <header>
-  <h1> Bala's Juice & Bakery</h1>
+  <h1>🧃 Bala's Juice & Bakery</h1>
   <p>Fresh Juices | Snacks | Teas — Order Online!</p>
   <a href="menu.html" class="btn">Order Now 🛒</a>
 </header>
 
+<!-- JUICES -->
 <section>
   <h2>🥤 Fresh Juices</h2>
   <div class="grid">
@@ -117,9 +110,49 @@
       <img src="https://tse1.mm.bing.net/th/id/OIP.7rZUv8x_zumLqm7PqJrRDgHaHa?cb=12&pid=ImgDetMain" alt="Grape Juice">
       <h3>Grape Juice</h3><p>₹50</p>
     </div>
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.1Qz8QkY1Q1Q1Q1Q1Q1Q1Q?cb=12&pid=ImgDetMain" alt="Green Apple Juice">
+      <h3>Green Apple Juice</h3><p>₹40</p>
+    </div>
+    <div class="card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.pineapple?cb=12&pid=ImgDetMain" alt="Pineapple Juice">
+      <h3>Pineapple Juice</h3><p>₹40</p>
+    </div>
   </div>
 </section>
 
+<!-- SHAKES & SPECIALS -->
+<section>
+  <h2>🥛 Shakes & Specials</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.rosemilk?cb=12&pid=ImgDetMain" alt="Rosemilk">
+      <h3>Rosemilk</h3><p>₹50</p>
+    </div>
+    <div class="card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.kesarbadam?cb=12&pid=ImgDetMain" alt="Kesar Badam Milk">
+      <h3>Kesar Badam Milk</h3><p>₹50</p>
+    </div>
+    <div class="card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.chocolateshake?cb=12&pid=ImgDetMain" alt="Chocolate Shake">
+      <h3>Rich Chocolate Shake</h3><p>₹70</p>
+    </div>
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.strawberryshake?cb=12&pid=ImgDetMain" alt="Strawberry Shake">
+      <h3>Strawberry Shake</h3><p>₹70</p>
+    </div>
+    <div class="card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.oreoshake?cb=12&pid=ImgDetMain" alt="Oreo Shake">
+      <h3>Oreo Shake</h3><p>₹70</p>
+    </div>
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.mintmojito?cb=12&pid=ImgDetMain" alt="Mint Mojito">
+      <h3>Mint Mojito</h3><p>₹40</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEAS & COFFEE -->
 <section>
   <h2>🍵 Teas & Coffee</h2>
   <div class="grid">
@@ -136,12 +169,21 @@
       <h3>Karupatti Coffee</h3><p>₹25</p>
     </div>
     <div class="card">
-      <img src="https://imgs.search.brave.com/JUEad731KLEzzVICnqQ4xuBLTKgPDOm0gU5PIRSQwSQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTcv/MzUxLzU4My9zbWFs/bC9pc29sYXRlZC1j/b2ZmZWUtYmVhbi1h/bmQtY29mZmVlLWN1/cC1mb3ItYS1jb3p5/LWxvb2stZnJlZS1w/bmcucG5n" alt="Coffee">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.coffeecup?cb=12&pid=ImgDetMain" alt="Coffee">
       <h3>Coffee</h3><p>₹25</p>
+    </div>
+    <div class="card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.hibiscustea?cb=12&pid=ImgDetMain" alt="Hibiscus Tea">
+      <h3>Hibiscus Tea</h3><p>₹30</p>
+    </div>
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.blacktea?cb=12&pid=ImgDetMain" alt="Black Tea">
+      <h3>Black Tea</h3><p>₹20</p>
     </div>
   </div>
 </section>
 
+<!-- SNACKS -->
 <section>
   <h2>🥪 Snacks</h2>
   <div class="grid">
@@ -160,6 +202,14 @@
     <div class="card">
       <img src="https://th.bing.com/th/id/OIP.Whq53cAhUjZQyVM3f-okXAHaE6?cb=12&pid=ImgDetMain" alt="Paneer Puff">
       <h3>Paneer Puff</h3><p>₹30</p>
+    </div>
+    <div class="card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.chickencutlet?cb=12&pid=ImgDetMain" alt="Chicken Cutlet">
+      <h3>Chicken Cutlet</h3><p>₹35</p>
+    </div>
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.vada?cb=12&pid=ImgDetMain" alt="Vada">
+      <h3>Vada</h3><p>₹15</p>
     </div>
   </div>
 </section>
